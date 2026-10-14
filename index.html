@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>about me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="site">
+    <header class="top">
+      <span>about me</span>
+      <span class="top-right">personal page / 2026</span>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="avatar">
+          <img id="profile-image" src="images/about.svg" alt="Profile picture">
+        </div>
+
+        <h1>your name</h1>
+        <p class="username">@yourusername</p>
+        <p class="bio">
+          hi, welcome to my page. this is where i keep all the stuff i like.
+        </p>
+
+        <nav aria-label="Profile pages">
+          <button class="tab active" data-page="home" data-avatar="images/about.svg" aria-selected="true">about</button>
+          <button class="tab" data-page="movies" data-avatar="images/movies.svg" aria-selected="false">movies & shows</button>
+          <button class="tab" data-page="anime" data-avatar="images/anime.svg" aria-selected="false">anime</button>
+          <button class="tab" data-page="reading" data-avatar="images/reading.svg" aria-selected="false">manga & manhwa</button>
+          <button class="tab" data-page="games" data-avatar="images/games.svg" aria-selected="false">games</button>
+          <button class="tab" data-page="music" data-avatar="images/music.svg" aria-selected="false">artists & songs</button>
+          <button class="tab" data-page="random" data-avatar="images/random.svg" aria-selected="false">random</button>
+        </nav>
+      </aside>
+
+      <div class="content">
+
+        <section class="page active" id="home">
+          <p class="overline">01 / introduction</p>
+          <h2>hey, i'm your name.</h2>
+          <p>
+            i made this page so people can get to know me a little better.
+            i'm usually watching something, reading something, or spending
+            too much time on a game.
+          </p>
+
+          <div class="card">
+            <h3>quick facts</h3>
+            <p><b>nickname:</b> your nickname</p>
+            <p><b>birthday:</b> your birthday</p>
+            <p><b>languages:</b> your languages</p>
+            <p><b>personality:</b> describe yourself however you want</p>
+          </div>
+
+          <div class="card">
+            <h3>currently</h3>
+            <p><b>watching:</b> ...</p>
+            <p><b>reading:</b> ...</p>
+            <p><b>playing:</b> ...</p>
+            <p><b>listening to:</b> ...</p>
+          </div>
+        </section>
+
+        <section class="page" id="movies" hidden>
+          <p class="overline">02 / watchlist</p>
+          <h2>movies & shows</h2>
+          <p>some things i watched and ended up loving.</p>
+
+          <div class="card">
+            <h3>favorite movies</h3>
+            <p>movie one / movie two / movie three</p>
+          </div>
+
+          <div class="card">
+            <h3>favorite shows</h3>
+            <p>show one / show two / show three</p>
+          </div>
+
+          <div class="card">
+            <h3>still need to watch</h3>
+            <p>my never-ending watchlist goes here...</p>
+          </div>
+        </section>
+
+        <section class="page" id="anime" hidden>
+          <p class="overline">03 / anime</p>
+          <h2>anime</h2>
+          <p>the ones i could rewatch without getting bored.</p>
+
+          <div class="card">
+            <h3>favorites</h3>
+            <p>anime one / anime two / anime three</p>
+          </div>
+
+          <div class="card">
+            <h3>favorite characters</h3>
+            <p>character one / character two / character three</p>
+          </div>
+
+          <div class="card">
+            <h3>currently watching</h3>
+            <p>add your current anime here</p>
+          </div>
+        </section>
+
+        <section class="page" id="reading" hidden>
+          <p class="overline">04 / reading</p>
+          <h2>manga & manhwa</h2>
+          <p>stories i got way too attached to.</p>
+
+          <div class="card">
+            <h3>manga</h3>
+            <p>manga one / manga two / manga three</p>
+          </div>
+
+          <div class="card">
+            <h3>manhwa & webtoons</h3>
+            <p>manhwa one / manhwa two / manhwa three</p>
+          </div>
+
+          <div class="card">
+            <h3>reading right now</h3>
+            <p>your current read</p>
+          </div>
+        </section>
+
+        <section class="page" id="games" hidden>
+          <p class="overline">05 / games</p>
+          <h2>games</h2>
+          <p>i can spend hours on these and not even notice.</p>
+
+          <div class="card">
+            <h3>favorites</h3>
+            <p>Roblox / Minecraft / add more games</p>
+          </div>
+
+          <div class="card">
+            <h3>currently playing</h3>
+            <p>your current obsession</p>
+          </div>
+
+          <div class="card">
+            <h3>favorite game characters</h3>
+            <p>add them here</p>
+          </div>
+        </section>
+
+        <section class="page" id="music" hidden>
+          <p class="overline">06 / music</p>
+          <h2>artists & songs</h2>
+          <p>my playlist changes every other day, but these are staying.</p>
+
+          <div class="card">
+            <h3>favorite artists</h3>
+            <p>artist one / artist two / artist three</p>
+          </div>
+
+          <div class="card">
+            <h3>favorite songs</h3>
+            <p>song one / song two / song three</p>
+          </div>
+
+          <div class="card">
+            <h3>on repeat lately</h3>
+            <p>your latest favorite</p>
+          </div>
+        </section>
+
+        <section class="page" id="random" hidden>
+          <p class="overline">07 / misc</p>
+          <h2>random things</h2>
+          <p>stuff that didn't fit anywhere else.</p>
+
+          <div class="card">
+            <h3>things i like</h3>
+            <p>rainy days / long conversations / your favorite snacks</p>
+          </div>
+
+          <div class="card">
+            <h3>things i don't like</h3>
+            <p>write whatever you want here</p>
+          </div>
+
+          <div class="card">
+            <h3>before you message me</h3>
+            <p>anything you want people to know before talking to you.</p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <footer>made by your name · last updated october 2026</footer>
+  </main>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const pages = document.querySelectorAll('.page');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+
+        tabs.forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+
+        pages.forEach(p => {
+          p.classList.remove('active');
+          p.hidden = true;
+        });
+
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+
+        const page = document.getElementById(tab.dataset.page);
+        page.hidden = false;
+        page.classList.add('active');
+
+        const picture = document.getElementById('profile-image');
+        picture.src = tab.dataset.avatar;
+        picture.alt = `Profile picture for ${tab.textContent.trim()}`;
+
+      });
+    });
+  </script>
+</body>
+</html>
